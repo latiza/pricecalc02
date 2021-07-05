@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/planet.gif" type="image/x-icon">
+    <title>Utazás kalkulátor</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Utazás kalkulátor</h1>
+        <table>
+            <tr>
+                <td><img src="img/planet.gif" alt=""></td>
+                <th>Uticél</th>
+                <th>Ár:</th>
+                <th>Reptéri<br>illeték:</th>
+                <th>Biztosítás: <br> 12.000 Ft</th>
+                <th>Fő:</th>
+                <th>Összesen:</th>
+            </tr>
+            <tr>
+                <td><img src="img/roma.jpg" alt=""></td>
+                <th>Róma</th>
+                <td><input type="number" disabled id="rom" value="220000"> Ft</td>
+                <td><input type="number" disabled id="romrep" value="12000"> Ft</td>
+                <td><input type="checkbox" id="rombizt" checked onchange="szamitas();"></td>
+                <td><input type="number" id="romfo" value="0" onchange="szamitas();"> Fő</td>
+                <td><input type="number" disabled id="romb"> Ft</td>
+            </tr>
+            <tr>
+                <td><img src="img/jordania.jpg" alt=""></td>
+                <th>Jordánia</th>
+                <td><input type="number" disabled id="jord" value="425000"> Ft</td>
+                <td><input type="number" disabled id="jordrep" value="16000"> Ft</td>
+                <td><input type="checkbox" id="jordbizt" checked onchange="szamitas();"></td>
+                <td>
+                    <input type="number" id="jordfo" value="0" onchange="szamitas();">Fő</td>
+                <td><input type="number" disabled id="jordb"> Ft</td>
+
+            </tr>
+            <tr>
+                <td><img src="img/torokorszag.jpg " alt=" "></td>
+                <th>Törökország</th>
+                <td><input type="number" disabled id="torok" value="395000"> Ft</td>
+                <td><input type="number" disabled id="torokrep" value="13000"> Ft</td>
+                <td><input type="checkbox" id="torokbizt" checked onchange="szamitas();"></td>
+                <td><input type="number" id="torokfo" value="0" onchange="szamitas();"> Fő</td>
+                <td><input type="number" disabled id="torokb"> Ft</td>
+            </tr>
+            <tr>
+                <td><img src="img/marokko.jpg " alt=" "></td>
+                <th>Marokkó</th>
+                <td><input type="number" disabled id="mar" value="376000"> Ft</td>
+                <td><input type="number" disabled id="marrep" value="17000"> Ft</td>
+                <td><input type="checkbox" id="marbizt" checked onchange="szamitas()"></td>
+                <td><input type="number" id="marfo" value="0" onchange="szamitas();"> Fő</td>
+                <td><input type="number" disabled id="marb"> Ft</td>
+            </tr>
+            <tr>
+                <td></td>
+                <th class="end" colspan="6"> Mindösszesen: <input type="number" disabled id="bsum"> Ft </th>
+            </tr>
+        </table>
+
+    </div>
+    <script src="script.js "></script>
+</body>
+
+</html>
